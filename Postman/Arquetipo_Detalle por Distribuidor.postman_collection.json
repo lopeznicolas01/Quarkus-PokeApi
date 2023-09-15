@@ -1,0 +1,199 @@
+{
+	"info": {
+		"_postman_id": "848cd5ad-3765-4067-b5e7-4ddde985447d",
+		"name": "Detalle por Distribuidor",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api-arq-introspect-dev.apps.osd-forum.a8p2.p1.openshiftapps.com/api/token/v1/accessToken?username=user_btt_intros&password=Admin1234&client_id=app_introspection&client_secret=b6d7792b-48b5-4fed-8d41-0a2157e59209&grant_type=password",
+					"protocol": "https",
+					"host": [
+						"api-arq-introspect-dev",
+						"apps",
+						"osd-forum",
+						"a8p2",
+						"p1",
+						"openshiftapps",
+						"com"
+					],
+					"path": [
+						"api",
+						"token",
+						"v1",
+						"accessToken"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "user_btt_intros"
+						},
+						{
+							"key": "password",
+							"value": "Admin1234"
+						},
+						{
+							"key": "client_id",
+							"value": "app_introspection"
+						},
+						{
+							"key": "client_secret",
+							"value": "b6d7792b-48b5-4fed-8d41-0a2157e59209"
+						},
+						{
+							"key": "grant_type",
+							"value": "password"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SOAP",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Btinreq\": {\r\n        \"Canal\": \"BTINTERNO\",\r\n        \"Requerimiento\": \"1\",\r\n        \"Usuario\": \"BTS_DUMMY\",\r\n        \"Token\": \"eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI5M3FpaUdqajQyYmZZeXdzSVdvS0hEendxUVNoMzl6czBEVEgwTUJtRk9jIn0.eyJleHAiOjE2NDIwODk2MTEsImlhdCI6MTY0MjA4NjAxMSwianRpIjoiYThhYzdjNzQtMjY1MS00NGRkLTk5ODItMGEzZDNkNzBkYjBjIiwiaXNzIjoiaHR0cHM6Ly9kZXYtYXV0b3JpemEuZm9ydW0uY2wvYXV0aC9yZWFsbXMvQURfRk9SVU0iLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiMGRlMmE1NGQtNWM4Mi00Y2I3LWE4M2YtZGU3NGIzMDk1NzI3IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiYXBwX2ludHJvc3BlY3Rpb24iLCJzZXNzaW9uX3N0YXRlIjoiMTAxZGM3OGQtMjE5Ni00OTExLWJhZmItNmFmOWRhZDViODUyIiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJwcm9maWxlIGVtYWlsIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJuYW1lIjoiVXN1YXJpbyBBcGxpY2FjaW9uIEJUVCIsInByZWZlcnJlZF91c2VybmFtZSI6InVzZXJfYnR0X2ludHJvcyIsImdpdmVuX25hbWUiOiJVc3VhcmlvIiwiZmFtaWx5X25hbWUiOiJBcGxpY2FjaW9uIEJUVCJ9.U4iXZMacThfxM4xjTpAu7QpDeCJeeS3nSfDplTwHEdfaf22YBKbVzVyixW6UZ1uwXi3Xw1yrCzu5Qki-6VFb9i7Urkx3GLOAbBsuHq6oeUctI5Ps2wnFkYmr0fTKgUv2hPZcz2gEFH4KMQmUzyjHMsZLO1D-UQYogq4LyTWc9sBNbDnWZMdqqIdgZazeFVPnAVbf2qmtw-2T1_b6lQMFbd6yrL_e2CqLUJjutfIyvePizddQVFUn2Y1_JFu2i_3nRWe_pfulVdobdyibcNe5EEL6ANSLXH7rIgOetkpOCkf3IMf7t92A2JYwNFTL-e-H_4VKAgB_ohzTHjasOzZ2lw\",\r\n        \"Device\": \"1\"\r\n    },\r\n    \"InPgcod\": \"1\",\r\n    \"InFiltro\": \"I\",\r\n    \"InImportador\": \"78703910\",\r\n    \"InHolding\": \"\",\r\n    \"InDistribuidor\": \"78770630\",\r\n    \"InMarca\": \"4\",\r\n    \"InLinea\": \"\",\r\n    \"TipoLinea\": \"1\",\r\n    \"InSublinea\": \"\",\r\n    \"DesdeReg\": \"1\",\r\n    \"HastaReg\": \"3600\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://desacorefpapp1.forum.local/btdesarrollofp/odwsbt_BTPortalSocio_v1.aspx?ConsultaLineaCredito",
+					"protocol": "http",
+					"host": [
+						"desacorefpapp1",
+						"forum",
+						"local"
+					],
+					"path": [
+						"btdesarrollofp",
+						"odwsbt_BTPortalSocio_v1.aspx"
+					],
+					"query": [
+						{
+							"key": "ConsultaLineaCredito",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Canal",
+						"value": "BTINTERNO",
+						"type": "default"
+					},
+					{
+						"key": "Usuario",
+						"value": "BTS_DUMMY",
+						"type": "default"
+					},
+					{
+						"key": "Device",
+						"value": "1",
+						"type": "default"
+					},
+					{
+						"key": "Requerimiento",
+						"value": "1",
+						"type": "default"
+					},
+					{
+						"key": "Token",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI5M3FpaUdqajQyYmZZeXdzSVdvS0hEendxUVNoMzl6czBEVEgwTUJtRk9jIn0.eyJleHAiOjE2NDIwODk2MTEsImlhdCI6MTY0MjA4NjAxMSwianRpIjoiYThhYzdjNzQtMjY1MS00NGRkLTk5ODItMGEzZDNkNzBkYjBjIiwiaXNzIjoiaHR0cHM6Ly9kZXYtYXV0b3JpemEuZm9ydW0uY2wvYXV0aC9yZWFsbXMvQURfRk9SVU0iLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiMGRlMmE1NGQtNWM4Mi00Y2I3LWE4M2YtZGU3NGIzMDk1NzI3IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiYXBwX2ludHJvc3BlY3Rpb24iLCJzZXNzaW9uX3N0YXRlIjoiMTAxZGM3OGQtMjE5Ni00OTExLWJhZmItNmFmOWRhZDViODUyIiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJwcm9maWxlIGVtYWlsIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJuYW1lIjoiVXN1YXJpbyBBcGxpY2FjaW9uIEJUVCIsInByZWZlcnJlZF91c2VybmFtZSI6InVzZXJfYnR0X2ludHJvcyIsImdpdmVuX25hbWUiOiJVc3VhcmlvIiwiZmFtaWx5X25hbWUiOiJBcGxpY2FjaW9uIEJUVCJ9.U4iXZMacThfxM4xjTpAu7QpDeCJeeS3nSfDplTwHEdfaf22YBKbVzVyixW6UZ1uwXi3Xw1yrCzu5Qki-6VFb9i7Urkx3GLOAbBsuHq6oeUctI5Ps2wnFkYmr0fTKgUv2hPZcz2gEFH4KMQmUzyjHMsZLO1D-UQYogq4LyTWc9sBNbDnWZMdqqIdgZazeFVPnAVbf2qmtw-2T1_b6lQMFbd6yrL_e2CqLUJjutfIyvePizddQVFUn2Y1_JFu2i_3nRWe_pfulVdobdyibcNe5EEL6ANSLXH7rIgOetkpOCkf3IMf7t92A2JYwNFTL-e-H_4VKAgB_ohzTHjasOzZ2lw",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:9102/credit-line-detail/v1/78703910/78770630/4/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9102",
+					"path": [
+						"credit-line-detail",
+						"v1",
+						"78703910",
+						"78770630",
+						"4",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Detalle por Distribuidor",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Canal",
+						"value": "BTINTERNO",
+						"type": "default"
+					},
+					{
+						"key": "Usuario",
+						"value": "BTS_DUMMY",
+						"type": "default"
+					},
+					{
+						"key": "Device",
+						"value": "1",
+						"type": "default"
+					},
+					{
+						"key": "Requerimiento",
+						"value": "1",
+						"type": "default"
+					},
+					{
+						"key": "Token",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI5M3FpaUdqajQyYmZZeXdzSVdvS0hEendxUVNoMzl6czBEVEgwTUJtRk9jIn0.eyJleHAiOjE2NDIwODk2MTEsImlhdCI6MTY0MjA4NjAxMSwianRpIjoiYThhYzdjNzQtMjY1MS00NGRkLTk5ODItMGEzZDNkNzBkYjBjIiwiaXNzIjoiaHR0cHM6Ly9kZXYtYXV0b3JpemEuZm9ydW0uY2wvYXV0aC9yZWFsbXMvQURfRk9SVU0iLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiMGRlMmE1NGQtNWM4Mi00Y2I3LWE4M2YtZGU3NGIzMDk1NzI3IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiYXBwX2ludHJvc3BlY3Rpb24iLCJzZXNzaW9uX3N0YXRlIjoiMTAxZGM3OGQtMjE5Ni00OTExLWJhZmItNmFmOWRhZDViODUyIiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJwcm9maWxlIGVtYWlsIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJuYW1lIjoiVXN1YXJpbyBBcGxpY2FjaW9uIEJUVCIsInByZWZlcnJlZF91c2VybmFtZSI6InVzZXJfYnR0X2ludHJvcyIsImdpdmVuX25hbWUiOiJVc3VhcmlvIiwiZmFtaWx5X25hbWUiOiJBcGxpY2FjaW9uIEJUVCJ9.U4iXZMacThfxM4xjTpAu7QpDeCJeeS3nSfDplTwHEdfaf22YBKbVzVyixW6UZ1uwXi3Xw1yrCzu5Qki-6VFb9i7Urkx3GLOAbBsuHq6oeUctI5Ps2wnFkYmr0fTKgUv2hPZcz2gEFH4KMQmUzyjHMsZLO1D-UQYogq4LyTWc9sBNbDnWZMdqqIdgZazeFVPnAVbf2qmtw-2T1_b6lQMFbd6yrL_e2CqLUJjutfIyvePizddQVFUn2Y1_JFu2i_3nRWe_pfulVdobdyibcNe5EEL6ANSLXH7rIgOetkpOCkf3IMf7t92A2JYwNFTL-e-H_4VKAgB_ohzTHjasOzZ2lw",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "https://get-partner-credit-line-detail-bts-dev.apps.osd-forum.a8p2.p1.openshiftapps.com/credit-line-detail/v1/78703910/78770630/4/2",
+					"protocol": "https",
+					"host": [
+						"get-partner-credit-line-detail-bts-dev",
+						"apps",
+						"osd-forum",
+						"a8p2",
+						"p1",
+						"openshiftapps",
+						"com"
+					],
+					"path": [
+						"credit-line-detail",
+						"v1",
+						"78703910",
+						"78770630",
+						"4",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
