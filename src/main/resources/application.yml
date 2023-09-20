@@ -24,3 +24,4 @@ quarkus:
          level: INFO
 
 deleteOperationCredit/mp-rest/url: https://delete-operation-credit-items-bts-dev.apps.osd-forum.a8p2.p1.openshiftapps.com/operation/credit-items/v1
+getPokemon/mp-rest/url: https://pokeapi.co/api/v2
