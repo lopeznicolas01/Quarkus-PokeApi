@@ -23,7 +23,7 @@ public class PokeApiController {
 
     @POST
     @Produces(MediaType.APPLICATION_JSON)
-    @Path("/traerListaPokemon}")
+    @Path("/traerListaPokemon")
     public Response traerListaPokemon(@RequestBody ListaRequest request){
         return pokemonService.obtenerListaPokemon(request);
 

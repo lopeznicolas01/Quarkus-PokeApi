@@ -1,34 +1,38 @@
 package cl.forum.arq.bts.pojo.response;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+
+import java.util.List;
 
 public class ListaResponse {
-    @JsonProperty ("name")
-    private String name;
-    @JsonProperty("url")
-    private String url;
+    @JsonPropertyOrder("count,results")
+    @JsonProperty("count")
+    private int count;
+    @JsonProperty("results")
+    private List<Resultado> results;
 
     public ListaResponse() {
     }
 
-    public ListaResponse(String name, String url) {
-        this.name = name;
-        this.url = url;
+    public ListaResponse(List<Resultado> results, int count) {
+        this.results = results;
+        this.count = count;
     }
 
-    public String getName() {
-        return name;
+    public List<Resultado> getResults() {
+        return results;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setResults(List<Resultado> results) {
+        this.results = results;
     }
 
-    public String getUrl() {
-        return url;
+    public int getCount() {
+        return count;
     }
 
-    public void setUrl(String url) {
-        this.url = url;
+    public void setCount(int count) {
+        this.count = count;
     }
 }

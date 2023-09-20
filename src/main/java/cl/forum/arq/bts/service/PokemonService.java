@@ -2,11 +2,11 @@ package cl.forum.arq.bts.service;
 import cl.forum.arq.bts.pojo.request.ListaRequest;
 import cl.forum.arq.bts.pojo.request.PokemonRequest;
 
-import java.util.List;
+import javax.ws.rs.core.Response;
 
 public interface PokemonService {
 
-    List<String> obtenerListaPokemon(ListaRequest body);
-    Pokemon obtenerPokemon(PokemonRequest body);
+    Response obtenerListaPokemon(ListaRequest body);
+    Response obtenerPokemon(PokemonRequest body);
 
 }
